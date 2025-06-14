@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 5vh auto;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  input[type="email"] {
+    padding: 0.75em;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0.5em;
+  }
+  
+  button {
+    padding: 0.75em 1em;
+    background: #1db954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #17a74b;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 0.5em 0;
+  }
+  
+  .small {
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 2em;
+  }
+  
