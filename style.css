@@ -1,63 +1,120 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background: #0d0d0d;
     color: #f4f4f4;
     margin: 0;
     padding: 0;
-  }
-  
-  .container {
+    line-height: 1.6;
+}
+
+.container {
     max-width: 600px;
-    margin: 5vh auto;
+    margin: 8vh auto;
     padding: 2em;
     text-align: center;
-  }
-  
-  input[type="email"] {
-    padding: 0.75em;
-    width: 70%;
-    border: none;
-    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2.5em;
     margin-bottom: 0.5em;
-  }
-  
-  textarea {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 1.5em 0 1em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    margin-bottom: 1.5em;
+}
+
+input[type="email"] {
     padding: 0.75em;
     width: 70%;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+    background: #1a1a1a;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: #1db954;
+}
+
+textarea {
+    padding: 0.75em;
+    width: 70%;
+    border: 2px solid #333;
+    border-radius: 8px;
     margin-bottom: 0.5em;
     resize: vertical;
     min-height: 80px;
     font-family: inherit;
-  }
-  
-  button {
-    padding: 0.75em 1em;
+    background: #1a1a1a;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #1db954;
+}
+
+button {
+    padding: 0.75em 1.5em;
     background: #1db954;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     margin-top: 0.5em;
-  }
-  
-  button:hover {
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
     background: #17a74b;
-  }
-  
-  ul {
+    transform: translateY(-1px);
+}
+
+ul {
     list-style: none;
     padding: 0;
-  }
-  
-  ul li {
-    margin: 0.5em 0;
-  }
-  
-  .small {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+ul li {
+    margin: 1em 0;
+    font-size: 1.1em;
+}
+
+.small {
     font-size: 0.9em;
     color: #999;
-    margin-top: 2em;
-  }
+    margin-top: 3em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 4vh auto;
+        padding: 1em;
+    }
+    
+    input[type="email"],
+    textarea {
+        width: 90%;
+    }
+    
+    ul {
+        max-width: 95%;
+    }
+}
   
