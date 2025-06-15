@@ -96,6 +96,17 @@ ul li {
     font-size: 1.1em;
 }
 
+.form-intro {
+    margin: 2em 0;
+    padding: 0 1em;
+}
+
+.form-intro p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
 .small {
     font-size: 0.9em;
     color: #999;
